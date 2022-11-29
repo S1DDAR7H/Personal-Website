@@ -1,1 +1,2 @@
-# welcome to my personal website
+# Hello There!
+I'm Siddarth Anil and this is my personal website
