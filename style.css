@@ -1,53 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-* {
+*{
+    margin: 0%;
     text-decoration: none;
+    font-family: "Josefin Sans";
+    font-size: 45px;
+    color: white;
 }
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url(bg1.jpg);    
-    background-repeat: no-repeat;
+.main{
+    background-color: black;
+    height: 100vh;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px;
-}
-.navbar:hover{
-    background-color: transparent;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-}
-.navbar a{
-    margin-top: 5px;
-    font-size: x-large;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navbar a:hover{
-    color: crimson;
-    font-size: xx-large;
-    transition: 0.5s;
-    background-color: white;
+i{
+    background-color: #dc143c;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    transition: linear 0.25s;
     padding: 5px;
-    margin-bottom: 2px;
-    border-radius: 5px;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
+    margin: 15px;
+}
+i:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.right-side-nav{
+    text-align: right;
+    margin-top: 8px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: linear 0.25s;
+}
+.home{
+    transition: linear 0.25s;
 }
 .intro{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-size: xx-large;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 .intro span{
-    color: rgb(220, 20, 60);
+    color: #dc143c;
+}
+
+/* about section */
+
+.about{
+    background-color: #dc143c;
+    height: 100vh;
 }
