@@ -6,11 +6,10 @@
     text-align: center;
     font-family: "Josefin Sans";
 }
-.main{
+#main{
     background-color: black;
     height: 100vh;
 }
-
 .intro{
     font-size: 40px;
     height: 1vh;
@@ -66,6 +65,24 @@ i{
     height: 100vh;
 
 }
+.homebutton-about{
+    cursor: pointer;
+    width: 12vh;
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    margin-bottom: 5vh;
+    padding: 3.5px 3.5px;
+    border-radius: 12px ;
+    border-width: 2.5px;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    transition: linear 0.2s;
+}
+.homebutton-about:hover{
+    color: rgb(220, 60, 20);
+    background-color: #ffffff;
+}
 .space{
     height: 5vh;
 }
@@ -73,16 +90,25 @@ i{
     padding: 3vh;
     margin-left: 2vh;
     height: 70vh;
-    width: 40vh;
+    width: 60vh;
     background-color: aliceblue;
+    margin-right: 5vh;
 }
 .edu{
     padding: 3vh;
     height: 70vh;
-    width: 40vh;
+    width: 60vh;
     float: right;
     margin-right: 2vh;
+    margin-left: 5vh;
     background-color: aliceblue;
+}
+.list{
+    text-align: center;
+    line-height: 50px;
+}
+.theabout{
+    margin-top: 2vh;
 }
 
 /* skills section */
@@ -91,19 +117,176 @@ i{
     background-color: #ffffff;
     height: 100vh;
 }
+.homebutton-skills{
+    cursor: pointer;
+    width: 12vh;
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    margin-bottom: 5vh;
+    padding: 3.5px 3.5px;
+    border-radius: 12px ;
+    border-width: 2.5px;
+    border-color: #dc143c;
+    color: #dc143c;
+    background-color: transparent;
+    transition: linear 0.2s;
+}
+.homebutton:hover{
+    color: rgb(220, 60, 20);
+    background-color: #ffffff;
+}
+.skill-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillcircle{
+    width: 16vh;
+    height: 16vh;
+    /*background-color: #dc143c;*/
+    position: relative;
+    margin: 20px;
+}
+.outer{
+    width: 16vh;
+    height: 16vh;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255) ;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+}
+.inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 1.2ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                -0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 
+}
+#number{
+    font-weight: 300;
+    color: #dc143c;
+}
+.skillname{
+    margin-top: 10px;
+    color: #dc143c;
+}
+.pythcircle{
+    fill: none;
+    stroke: #dc143c;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: pyth 3s linear forwards;
+}
+.hascircle{
+    fill: none;
+    stroke: #dc143c;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: hac 3s linear forwards;
+}
+.ccircle{
+    fill: none;
+    stroke: #dc143c;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: c 3s linear forwards;
+}
+.javacircle{
+    fill: none;
+    stroke: #dc143c;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: java 3s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skilllevel{
+    font-weight: 300;
+    margin-top: 3vh;
+    width: 15vh;
+}
+@keyframes pyth{
+    100%{
+        stroke-dashoffset: 118;
+    }
+}
+@keyframes hac{
+    100%{
+        stroke-dashoffset: 165.2;
+    }
+}
+@keyframes c{
+    100%{
+        stroke-dashoffset: 212.4;
+    }
+}
+@keyframes java{
+    100%{
+        stroke-dashoffset: 212.4;
+    }
+}
 /* projects section */
 
 #projects{
     background-color: #000000;
     height: 100vh;
 }
-
+.homebutton{
+    cursor: pointer;
+    width: 12vh;
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    margin-bottom: 5vh;
+    padding: 3.5px 3.5px;
+    border-radius: 12px ;
+    border-width: 2.5px;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    transition: linear 0.2s;
+}
+.homebutton:hover{
+    color: rgb(220, 60, 20);
+    background-color: #ffffff;
+}
 /* contact section */
 
 #contacts{
     background-color: #dc143c;
     height: 100vh;
 }
-
+.homebutton{
+    cursor: pointer;
+    width: 12vh;
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    margin-bottom: 5vh;
+    padding: 3.5px 3.5px;
+    border-radius: 12px ;
+    border-width: 2.5px;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    transition: linear 0.2s;
+}
+.homebutton:hover{
+    color: rgb(220, 60, 20);
+    background-color: #ffffff;
+}
 
