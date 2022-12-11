@@ -32,7 +32,7 @@ button{
     font-size: 2.5vh;
     margin-top: 10vh;
     margin-right: 1vh;
-    padding: 3.5px 3.5px;
+    padding: 3px;
     border-radius: 12px ;
     border-width: 2.5px;
     border-color: #dc143c;
@@ -52,11 +52,10 @@ i{
     border-radius: 50%;
     height: 6vh;
     width: 6vh;
-    margin-top: 10vh;
+    margin-top: 6vh;
     margin-left: 3vh;
     font-size: 35px;
     transition: linear 0.5s;
-    
 }
 
 /* about section */
@@ -64,17 +63,18 @@ i{
 #about{
     background-color: #dc143c;
     height: 100vh;
-
 }
 .homebutton-about{
     cursor: pointer;
     width: 12vh;
     font-size: 2.5vh;
+    margin-left: 1vh;
     margin-right: 1vh;
     margin-bottom: 5vh;
     padding: 3.5px 3.5px;
     border-radius: 12px ;
     border-width: 2.5px;
+    text-align: center;
     border-color: #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -89,11 +89,14 @@ i{
 }
 .aboutme{
     padding: 3vh;
-    margin-left: 2vh;
     height: 70vh;
     width: 60vh;
-    background-color: aliceblue;
     margin-right: 5vh;
+    margin-left: 2vh;
+    background-color: aliceblue;
+    box-shadow: 6px 6px 10px  rgba(0, 0, 0, 0.15),
+    6px 6px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 .edu{
     padding: 3vh;
@@ -103,6 +106,9 @@ i{
     margin-right: 2vh;
     margin-left: 5vh;
     background-color: aliceblue;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    6px 6px 10px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 .list{
     text-align: center;
@@ -123,7 +129,9 @@ i{
     width: 12vh;
     font-size: 2.5vh;
     margin-right: 1vh;
+    margin-left: 1vh;
     margin-bottom: 5vh;
+    text-align: center;
     padding: 3.5px 3.5px;
     border-radius: 12px ;
     border-width: 2.5px;
@@ -135,6 +143,14 @@ i{
 .homebutton:hover{
     color: rgb(220, 60, 20);
     background-color: #ffffff;
+}
+.heading{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #000000;
+    font-weight: 800px;
+    text-shadow: 6px 4px 0px rgba(220, 60, 20, 0.2);
+    text-align: center;
 }
 .skill-section{
     display: flex;
@@ -272,12 +288,14 @@ svg{
     background-color: #dc143c;
     height: 100vh;
 }
-.homebutton{
+.homebutton-contacts{
     cursor: pointer;
     width: 12vh;
     font-size: 2.5vh;
     margin-right: 1vh;
+    margin-left: 1vh;
     margin-bottom: 5vh;
+    text-align: center;
     padding: 3.5px 3.5px;
     border-radius: 12px ;
     border-width: 2.5px;
@@ -286,8 +304,42 @@ svg{
     background-color: transparent;
     transition: linear 0.2s;
 }
-.homebutton:hover{
+.homebutton-contacts:hover{
     color: rgb(220, 60, 20);
     background-color: #ffffff;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    background-color: aliceblue;
+    height: 40vh;
+    width: 60vh;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    6px 6px 10px 1px rgba(0, 0, 0, 0.7);
+}
+.contact-info button{
+    margin-bottom: 50px;
+}
+.contact-info ul{
+    margin-top: 30px;
+}
+.contact-info ul p{
+    font-size: x-large;
+    line-height: 60px;
+}
+.email-button-container{
+    color: #dc143c;
+    font-size: x-large;
+}
+.email-button-container input{
+    margin: 20px;
+}
+#email-button{
+    height: 3vh;
+    width: 20vh;
 }
 
